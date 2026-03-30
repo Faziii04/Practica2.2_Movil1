@@ -1,5 +1,9 @@
 package com.example.practica22.classes
 
-class Diagnostico(var dolencia: String, var diagnostico: String, var peso: Int?, var altura: Int?) {
-
-}
+data class Diagnostico(
+    var tipoMascota: String,
+    var pesoKg: Double,
+    var medidasCm: String,
+    var dolencia: String,
+    var diagnostico: String
+)

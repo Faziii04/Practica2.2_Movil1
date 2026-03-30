@@ -1,3 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Practica2.2</string>
+    <string name="registro_historial_titulo">Registro de Historial Clinico</string>
+    <string name="registro_historial_tipo_mascota">Tipo de Mascota</string>
+    <string name="registro_historial_peso">Peso (kg)</string>
+    <string name="registro_historial_medidas">Medidas (cm)</string>
+    <string name="registro_historial_dolencia">Descripcion de la dolencia</string>
+    <string name="registro_historial_diagnostico">Diagnostico Medico</string>
+    <string name="registro_historial_guardar">Guardar Historial</string>
+
+    <string name="registro_doctor_actualizar">Actualizar Doctor</string>
+    <string name="doctor_nombre_formato">%1$s %2$s</string>
+    <string name="item_doctor_nombre">Nombre del Doctor</string>
+    <string name="item_doctor_especialidad">Especialidad</string>
+    <string name="item_doctor_editar">Editar doctor</string>
+    <string name="item_doctor_eliminar">Eliminar doctor</string>
 </resources>

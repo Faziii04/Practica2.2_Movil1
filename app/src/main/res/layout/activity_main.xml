@@ -1,63 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="24dp"
     android:background="#0F172A"
     tools:context=".MainActivity">
 
-    <TextView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🐾 Veterinaria Univalle"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¡Bienvenido a nuestro sistema!"
+            android:textSize="18sp"
+            android:textColor="#CBD5E1"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <ImageView
+            android:id="@+id/logoPlaceholder"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="32dp"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/ic_menu_gallery" />
+
+        <Button
+            android:id="@+id/registerDoctorButton"
+            android:layout_width="280dp"
+            android:layout_height="55dp"
+            android:text="👨‍⚕️ Registrarse como Doctor"
+            app:backgroundTint="#6366F1"
+            app:cornerRadius="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/registerPetButton"
+            android:layout_width="280dp"
+            android:layout_height="55dp"
+            android:text="🐶 Registrar mi Mascota"
+            app:backgroundTint="#EC4899"
+            app:cornerRadius="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnGestionDoctores"
+            android:layout_width="280dp"
+            android:layout_height="55dp"
+            android:text="⚙️ Gestión de Doctores (CRUD)"
+            app:backgroundTint="#475569"
+            app:cornerRadius="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnLoginDoctor"
+            android:layout_width="280dp"
+            android:layout_height="55dp"
+            android:text="🔑 Iniciar Sesión (Doctor)"
+            app:backgroundTint="#1E293B"
+            app:cornerRadius="12dp"
+            android:textColor="#6366F1" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabHistory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="🐾 PetCare"
-        android:textSize="48sp"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF"
-        android:gravity="center"
-        android:layout_marginBottom="16dp" />
+        android:layout_gravity="bottom|end"
+        android:layout_margin="24dp"
+        android:contentDescription="Registro Historial"
+        app:srcCompat="@android:drawable/ic_menu_edit"
+        app:backgroundTint="#10B981" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Your pet's health, our priority"
-        android:textSize="18sp"
-        android:textColor="#CBD5E1"
-        android:gravity="center"
-        android:layout_marginBottom="72dp" />
-
-    <ImageView
-        android:id="@+id/logoPlaceholder"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginBottom="40dp"
-        android:layout_gravity="center"
-        android:background="#1E293B"
-        android:scaleType="centerInside"
-        android:src="@drawable/eagle_mascot" />
-
-
-    <Button
-        android:id="@+id/registerDoctorButton"
-        android:layout_width="280dp"
-        android:layout_height="60dp"
-        android:text="👨‍⚕️ Register as Doctor"
-        app:backgroundTint="#6366F1"
-        app:cornerRadius="12dp"
-        android:layout_marginBottom="20dp"
-        android:layout_gravity="center" />
-
-    <Button
-        android:id="@+id/registerPetButton"
-        android:layout_width="280dp"
-        android:layout_height="60dp"
-        android:text="🐶 Register as Pet Owner"
-        app:backgroundTint="#EC4899"
-        app:cornerRadius="12dp"
-        android:layout_gravity="center" />
-
-</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

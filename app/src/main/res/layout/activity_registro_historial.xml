@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0F172A"
-    tools:context=".RegistroDoctor">
+    tools:context=".RegistroHistorial">
 
     <LinearLayout
         android:id="@+id/main"
@@ -18,84 +18,80 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Registro de Doctor"
+            android:text="@string/registro_historial_titulo"
             android:textSize="24sp"
             android:textStyle="bold"
             android:textColor="#FFFFFF"
             android:layout_marginBottom="32dp" />
 
         <EditText
-            android:id="@+id/etCi"
+            android:id="@+id/etTipoMascota"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Cédula de Identidad"
-            android:inputType="number"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#64748B"
-            android:backgroundTint="#6366F1"
-            android:layout_marginBottom="16dp" />
-
-        <EditText
-            android:id="@+id/etNombre"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Primer Nombre"
-            android:inputType="textPersonName"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#64748B"
-            android:backgroundTint="#6366F1"
-            android:layout_marginBottom="16dp" />
-
-        <EditText
-            android:id="@+id/etApellido"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Segundo Nombre / Apellido"
-            android:inputType="textPersonName"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#64748B"
-            android:backgroundTint="#6366F1"
-            android:layout_marginBottom="16dp" />
-
-        <EditText
-            android:id="@+id/etEdad"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Edad"
-            android:inputType="number"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#64748B"
-            android:backgroundTint="#6366F1"
-            android:layout_marginBottom="16dp" />
-
-        <EditText
-            android:id="@+id/etEspecialidad"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Especialidad"
+            android:hint="@string/registro_historial_tipo_mascota"
             android:inputType="text"
+            android:importantForAutofill="no"
             android:textColor="#FFFFFF"
             android:textColorHint="#64748B"
-            android:backgroundTint="#6366F1"
+            android:backgroundTint="#10B981"
             android:layout_marginBottom="16dp" />
 
         <EditText
-            android:id="@+id/etPassword"
+            android:id="@+id/etPesoHistorial"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Contraseña"
-            android:inputType="textPassword"
+            android:hint="@string/registro_historial_peso"
+            android:inputType="numberDecimal"
+            android:importantForAutofill="no"
             android:textColor="#FFFFFF"
             android:textColorHint="#64748B"
-            android:backgroundTint="#6366F1"
+            android:backgroundTint="#10B981"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etMedidas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/registro_historial_medidas"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#64748B"
+            android:backgroundTint="#10B981"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etDolencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/registro_historial_dolencia"
+            android:inputType="textMultiLine"
+            android:importantForAutofill="no"
+            android:lines="3"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#64748B"
+            android:backgroundTint="#10B981"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etDiagnostico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/registro_historial_diagnostico"
+            android:inputType="textMultiLine"
+            android:importantForAutofill="no"
+            android:lines="3"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#64748B"
+            android:backgroundTint="#10B981"
             android:layout_marginBottom="32dp" />
 
         <Button
-            android:id="@+id/btnRegistrarDoctor"
+            android:id="@+id/btnGuardarHistorial"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:text="Registrar Doctor"
-            app:backgroundTint="#6366F1"
+            android:text="@string/registro_historial_guardar"
+            app:backgroundTint="#10B981"
             app:cornerRadius="12dp" />
 
     </LinearLayout>

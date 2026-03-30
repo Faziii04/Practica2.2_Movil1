@@ -1,103 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="24dp"
     android:background="#0F172A"
-    tools:context=".MainActivity">
+    tools:context=".RegistroMascota">
 
-    <ScrollView
+    <LinearLayout
+        android:id="@+id/main"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
 
-        <LinearLayout
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registro de Mascota"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="32dp" />
+
+        <ImageView
+            android:id="@+id/ivPetPhoto"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@android:drawable/ic_menu_camera"
+            android:background="#1E293B"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="Foto de la mascota"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toca para subir foto desde galería"
+            android:textColor="#CBD5E1"
+            android:textSize="12sp"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/etNombreMascota"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:padding="24dp">
+            android:hint="Nombre de la Mascota"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#64748B"
+            android:backgroundTint="#EC4899"
+            android:layout_marginBottom="16dp" />
 
-            <!-- Welcome Section -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="🐾 PetCare"
-                android:textSize="48sp"
-                android:textStyle="bold"
-                android:textColor="#FFFFFF"
-                android:gravity="center"
-                android:layout_marginBottom="16dp" />
+        <EditText
+            android:id="@+id/etEspecie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Especie (Perro, Gato, etc.)"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#64748B"
+            android:backgroundTint="#EC4899"
+            android:layout_marginBottom="16dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Your pet's health, our priority"
-                android:textSize="18sp"
-                android:textColor="#CBD5E1"
-                android:gravity="center"
-                android:layout_marginBottom="56dp" />
+        <EditText
+            android:id="@+id/etRaza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Raza"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#64748B"
+            android:backgroundTint="#EC4899"
+            android:layout_marginBottom="16dp" />
 
-            <!-- Register Buttons -->
-            <Button
-                android:id="@+id/registerDoctorButton"
-                android:layout_width="280dp"
-                android:layout_height="60dp"
-                android:text="👨‍⚕️ Register as Doctor"
-                app:backgroundTint="#6366F1"
-                app:cornerRadius="12dp"
-                android:layout_marginBottom="20dp"
-                android:layout_gravity="center" />
+        <EditText
+            android:id="@+id/etEdadMascota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Edad"
+            android:inputType="number"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#64748B"
+            android:backgroundTint="#EC4899"
+            android:layout_marginBottom="16dp" />
 
-            <Button
-                android:id="@+id/registerPetButton"
-                android:layout_width="280dp"
-                android:layout_height="60dp"
-                android:text="🐶 Register as Pet Owner"
-                app:backgroundTint="#EC4899"
-                app:cornerRadius="12dp"
-                android:layout_marginBottom="72dp"
-                android:layout_gravity="center" />
+        <EditText
+            android:id="@+id/etPesoMascota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Peso (kg)"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#64748B"
+            android:backgroundTint="#EC4899"
+            android:layout_marginBottom="16dp" />
 
-            <!-- Login Section -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Already a member?"
-                android:textSize="16sp"
-                android:textColor="#CBD5E1"
-                android:gravity="center"
-                android:layout_marginBottom="24dp" />
+        <EditText
+            android:id="@+id/etAlturaMascota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Altura (cm)"
+            android:inputType="number"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#64748B"
+            android:backgroundTint="#EC4899"
+            android:layout_marginBottom="16dp" />
 
-            <!-- Pet Login -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Pet Owner Login"
-                android:textSize="14sp"
-                android:textStyle="bold"
-                android:textColor="#EC4899"
-                android:layout_marginBottom="12dp" />
+        <EditText
+            android:id="@+id/etPasswordMascota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña para Login"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#64748B"
+            android:backgroundTint="#EC4899"
+            android:layout_marginBottom="32dp" />
 
-            <EditText
-                android:id="@+id/petNameLogin"
-                android:layout_width="280dp"
-                android:layout_height="48dp"
-                android:hint="Pet Name"
-                android:textColorHint="#64748B"
-                android:textColor="#FFFFFF"
-                android:padding="12dp"
-                android:background="#1E293B"
-                android:layout_marginBottom="12dp"
-                android:layout_gravity="center" />
+        <Button
+            android:id="@+id/btnRegistrarMascota"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Registrar Mascota"
+            app:backgroundTint="#EC4899"
+            app:cornerRadius="12dp" />
 
-            <EditText
-                android:id="@+id/petPasswordLogin"
-                android:layout_width="280dp"
-                android:layout_height="48dp"
-                android:hint="Password"
-                android:textColorHint
+    </LinearLayout>
+</ScrollView>

@@ -12,10 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Practica22">
         <activity
+            android:name=".GestionDoctoresActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroHistorial"
+            android:exported="false" />
+        <activity
             android:name=".RegistroDoctor"
             android:exported="false" />
         <activity
             android:name=".RegistroMascota"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
